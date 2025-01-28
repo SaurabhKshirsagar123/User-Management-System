@@ -10,7 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class UserFormComponent implements OnInit {
   userForm!: FormGroup;
-  roles: string[] = ['Admin', 'Editor', 'Viewer'];
+  roles: string[] = ['Super Admin', 'Admin', 'User'];
 
   constructor(private fb: FormBuilder, private router: Router, private userService: UserService, private route: ActivatedRoute) { }
 
