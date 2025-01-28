@@ -1,0 +1,110 @@
+
+.user-list-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full screen height */
+  }
+  
+  mat-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  mat-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-toolbar {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Gap between elements */
+  }
+  
+  .toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  button[mat-raised-button] {
+    padding: 4px 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 36px; /* Fixed height to match input field */
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-field {
+    width: 300px;
+    max-width: 100%;
+  }
+  
+  mat-form-field {
+    font-size: 14px;
+  }
+  
+  mat-form-field .mat-mdc-text-field-wrapper {
+    height: 10px; /* Match button height */
+  }
+  
+  mat-form-field input {
+    font-size: 10px;
+    height: 10px;
+  }
+    
+  .table-container {
+    overflow-x: auto;
+    flex-grow: 1;
+  }
+  
+  .user-table {
+    width: 100%;
+    table-layout: auto;
+  }
+  
+  mat-header-cell{
+    padding: 4px 8px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  mat-cell {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+  
+  mat-row:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  mat-paginator {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-toolbar {
+      flex-direction: row;
+    }
+  
+    .toolbar-actions {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .search-field {
+      flex-grow: 1;
+    }
+  }
+  
