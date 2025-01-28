@@ -1,0 +1,69 @@
+/* Container Styles */
+.user-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px; /* For spacing from edges */
+  }
+  
+  mat-card {
+    width: 100%; /* Full width for mobile devices */
+    max-width: 500px; /* Limit width for larger screens */
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 8%;
+  }
+  
+  mat-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  /* Form Field Styles */
+  mat-form-field {
+    margin-bottom: 16px; /* Space between fields */
+  }
+  
+  .full-width {
+    width: 100%; /* Ensure fields take full width */
+  }
+  
+  mat-form-field.mat-mdc-form-field {
+    display: block;
+  }
+  
+  /* Button Styles */
+  .form-actions {
+    display: flex;
+    justify-content: space-between; /* Place buttons apart */
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  button[type="submit"] {
+    flex: 1; /* Buttons grow to equal size */
+    max-width: 200px;
+  }
+  
+  button[type="button"] {
+    flex: 1;
+    max-width: 200px;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 600px) {
+    .form-actions {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      align-items: stretch; /* Ensure full-width buttons */
+    }
+  
+    button[type="submit"], 
+    button[type="button"] {
+      max-width: 100%; /* Full width buttons */
+      margin: 4px 0; /* Add spacing between buttons */
+    }
+  }
+  
